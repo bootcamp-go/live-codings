@@ -1,0 +1,27 @@
+host: localhost:8080
+info:
+  contact:
+    email: bootcamp-go@digitalhouse.com
+    name: Bootcamp Go
+    url: https://www.digitalhouse.com
+  description: Esta es una pequeña app para mostrar como funciona la documentación.
+  termsOfService: https://www.digitalhouse.com
+  title: API de ejemplo
+  version: "1.0"
+paths:
+  /prueba:
+    get:
+      consumes:
+      - application/json
+      description: Devuelve un Hola Mundo
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Hola Mundo
+swagger: "2.0"
